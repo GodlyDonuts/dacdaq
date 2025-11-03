@@ -6,12 +6,12 @@
 ⚡️ DacDAQ ⚡️
 </h1>
 
-<p\>
-<b\>A robust, high-performance, and scalable Python system for real-time data acquisition, processing, and visualization.\</b\>
-</p\>
-<p\>
+<p>
+<b>A robust, high-performance, and scalable Python system for real-time data acquisition, processing, and visualization.</b>
+</p>
+<p>
 Built to replace legacy lab software, DacDAQ offers a modern, maintainable, and version-controllable solution for scientific research.
-</p\>
+</p>
 
 <p\>
 <a href="[https://github.com/GodlyDonuts/dacdaq/actions](https://github.com/GodlyDonuts/dacdaq/actions)"\>
