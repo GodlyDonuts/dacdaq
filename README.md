@@ -110,35 +110,6 @@ dacdaq/
 
 -----
 
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1.  **Fork** the Project
-2.  **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
-3.  **Commit your Changes** (`git commit -m 'Add some AmazingFeature'`)
-4.  **Push to the Branch** (`git push origin feature/AmazingFeature`)
-5.  **Open a Pull Request** against the `develop` branch.
-
-### Branching Strategy
-
-\<details\>
-\<summary\>\<strong\>Click to expand our GitFlow Branching Strategy\</strong\>\</summary\>
-
-This project uses a branching model based on **GitFlow**.
-
-  * 🌲 **`main`**: This branch contains production-ready, tagged releases. All code on `main` is stable and deployable. **Do not commit directly to this branch.**
-  * 🛠️ **`develop`**: This is the main development branch. It contains the latest "work-in-progress" code. All feature branches are merged into `develop`.
-  * ✨ **`feature/your-feature-name`**: Create these branches from `develop` for any new feature.
-      * *Example:* `feature/add-hdf5-support`
-  * 🐞 **`fix/bug-description`**: Create these branches from `develop` to fix a non-urgent bug.
-      * *Example:* `fix/memory-leak-in-streamer`
-  * 🔥 **`hotfix/issue-name`**: Create these branches from `main` *only* to fix a critical, production-breaking bug. This branch is merged into both `main` and `develop`.
-
-\</details\>
-
------
-
 ## 📜 License
 
 Distributed under the **MIT License**. See `LICENSE` file for more information.
