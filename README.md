@@ -1,33 +1,33 @@
-\<div align="center"\>
+<div align="center"\>
 
 <br>
 
-\<h1\>
+<h1\>
 ⚡️ DacDAQ ⚡️
-\</h1\>
+</h1\>
 
-\<p\>
-\<b\>A robust, high-performance, and scalable Python system for real-time data acquisition, processing, and visualization.\</b\>
-\</p\>
-\<p\>
+<p\>
+<b\>A robust, high-performance, and scalable Python system for real-time data acquisition, processing, and visualization.\</b\>
+</p\>
+<p\>
 Built to replace legacy lab software, DacDAQ offers a modern, maintainable, and version-controllable solution for scientific research.
-\</p\>
+</p\>
 
-\<p\>
-\<a href="[https://github.com/GodlyDonuts/dacdaq/actions](https://github.com/GodlyDonuts/dacdaq/actions)"\>
-\<img src="[https://img.shields.io/github/actions/workflow/status/GodlyDonuts/dacdaq/ci.yml?branch=main\&style=for-the-badge](https://img.shields.io/github/actions/workflow/status/GodlyDonuts/dacdaq/ci.yml?branch=main&style=for-the-badge)" alt="Build Status"\>
-\</a\>
-\<a href="[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)"\>
-\<img src="[https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)" alt="License: MIT"\>
-\</a\>
-\<a href="[https://github.com/GodlyDonuts/dacdaq/releases](https://github.com/GodlyDonuts/dacdaq/releases)"\>
-\<img src="[https://img.shields.io/github/v/release/GodlyDonuts/dacdaq?style=for-the-badge](https://img.shields.io/github/v/release/GodlyDonuts/dacdaq?style=for-the-badge)" alt="Latest Release"\>
-\</a\>
-\<a href="[https://github.com/GodlyDonuts/dacdaq/issues](https://github.com/GodlyDonuts/dacdaq/issues)"\>
-\<img src="[https://img.shields.io/github/issues/GodlyDonuts/dacdaq?style=for-the-badge](https://img.shields.io/github/issues/GodlyDonuts/dacdaq?style=for-the-badge)" alt="Open Issues"\>
-\</a\>
-\</p\>
-\</div\>
+<p\>
+<a href="[https://github.com/GodlyDonuts/dacdaq/actions](https://github.com/GodlyDonuts/dacdaq/actions)"\>
+<img src="[https://img.shields.io/github/actions/workflow/status/GodlyDonuts/dacdaq/ci.yml?branch=main\&style=for-the-badge](https://img.shields.io/github/actions/workflow/status/GodlyDonuts/dacdaq/ci.yml?branch=main&style=for-the-badge)" alt="Build Status"\>
+</a\>
+<a href="[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)"\>
+<img src="[https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)" alt="License: MIT"\>
+</a\>
+<a href="[https://github.com/GodlyDonuts/dacdaq/releases](https://github.com/GodlyDonuts/dacdaq/releases)"\>
+<img src="[https://img.shields.io/github/v/release/GodlyDonuts/dacdaq?style=for-the-badge](https://img.shields.io/github/v/release/GodlyDonuts/dacdaq?style=for-the-badge)" alt="Latest Release"\>
+</a\>
+<a href="[https://github.com/GodlyDonuts/dacdaq/issues](https://github.com/GodlyDonuts/dacdaq/issues)"\>
+<img src="[https://img.shields.io/github/issues/GodlyDonuts/dacdaq?style=for-the-badge](https://img.shields.io/github/issues/GodlyDonuts/dacdaq?style=for-the-badge)" alt="Open Issues"\>
+</a\>
+</p\>
+</div\>
 
 -----
 
