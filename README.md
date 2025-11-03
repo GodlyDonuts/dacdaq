@@ -7,7 +7,7 @@
   </h1>
 
   <p>
-    <b>[A robust, high-performance, and scalable system for real-time data acquisition, processing, and visualization.]</b>
+    <b>A robust, high-performance, and scalable system for real-time data acquisition, processing, and visualization.</b>
   </p>
 
   <p>
@@ -28,7 +28,7 @@
 
 ---
 
-### <p align="center">DacDAQ is a complete software toolkit for interfacing with high-speed hardware and streaming data to multiple consumers. It's built for applications in [scientific research, industrial IoT, real-time analytics, ...]</p>
+### <p align="center">DacDAQ is a complete software toolkit for interfacing with high-speed hardware and streaming data to multiple consumers. It's built for applications in scientific research, industrial IoT, and real-time analytics.</p>
 
 <br>
 
@@ -55,12 +55,12 @@
 
 ## ✨ Features
 
-- ⚡ **High-Throughput:** Capable of handling `[X]` samples/second or `[Y]` Gb/s of sustained data flow.
-- 🧩 **Modular Architecture:** Easily extend functionality by adding new plugins for hardware or data sinks (e.g., InfluxDB, Kafka, HDF5).
-- ⏱️ **Real-time Processing:** Apply filters, transformations, and analytics on-the-fly as data is acquired.
-- 📡 **Multiple Sinks:** Stream data simultaneously to files, databases, and real-time dashboards.
-- 🌐 **Web-Based Monitoring:** (Optional) Comes with a lightweight web interface to monitor system status and visualize live data streams.
-- **[Add Your Feature]:** Describe another key capability of your project.
+- ⚡ **High-Throughput:** Capable of handling **over 100 MS/s** (MegaSamples/second) or **1.6 Gb/s** of sustained data flow.
+- 🧩 **Modular Architecture:** Easily extend functionality by adding new plugins for hardware (e.g., `NI-DAQmx`, `Red Pitaya`) or data sinks (e.g., `InfluxDB`, `Kafka`, `HDF5`).
+- ⏱️ **Real-time Processing:** Apply filters, transformations, and analytics on-the-fly using `NumPy` and `SciPy`.
+- 📡 **Multiple Sinks:** Stream data simultaneously to files (HDF5, Parquet), databases, and real-time dashboards.
+- 🌐 **Web-Based Monitoring:** Comes with a lightweight `FastAPI` + `Plotly Dash` interface to monitor system status and visualize live data streams.
+- **Async-First:** Built with `asyncio` to handle high-concurrency I/O operations without blocking.
 
 ---
 
@@ -70,31 +70,28 @@ Get your local copy up and running in a few simple steps.
 
 ### Prerequisites
 
-List all the software, hardware, or dependencies required to run your project.
-
-- `[Language, e.g., Python 3.10+]`
-- `[Framework, e.g., .NET 8]`
-- `[Package Manager, e.g., pip, npm]`
-- `[Hardware, e.g., A specific ADC model or Raspberry Pi]`
+- `Python 3.10+`
+- `pip` and `venv`
+- `NumPy`, `Pandas`, `FastAPI`
+- A compatible DAQ device (e.g., NI-DAQmx) or use the built-in simulated device for testing.
 
 ### Installation
-
-Provide the step-by-step commands to install your project.
 
 ```bash
 # 1. Clone the repository
 git clone [https://github.com/GodlyDonuts/dacdaq.git](https://github.com/GodlyDonuts/dacdaq.git)
 cd dacdaq
 
-# 2. Install dependencies (Example for Python)
+# 2. Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+
+# 3. Install dependencies
 pip install -r requirements.txt
 
-# 3. (If applicable) Build the project
-make build
-
-# 4. (If applicable) Set up configuration
+# 4. Set up your local configuration
 cp config/default.yml config/local.yml
-# ...then edit config/local.yml with your settings
+# ...then edit config/local.yml with your device and database settings
 ````
 
 -----
@@ -105,18 +102,20 @@ Show users how to use your project with clear code examples.
 
 ### Example 1: As a Library
 
-If your project can be imported:
-
 ```python
 # main.py
 from dacdaq import Controller
 
 # 1. Configure the acquisition
 config = {
-    "device": "DeviceModel-XYZ",
-    "sample_rate": 1_000_000,
-    "channels": ["ch1", "ch2"],
-    "sink": {"type": "file", "format": "hdf5"}
+    "device": "Dev1",  # Typical NI-DAQmx device name
+    "sample_rate": 1_000_000, # 1 MS/s
+    "channels": ["Dev1/ai0", "Dev1/ai1"], # Analog input channels
+    "sink": {
+        "type": "file", 
+        "format": "hdf5",
+        "path": "data/session_01.h5"
+    }
 }
 
 # 2. Start the acquisition
@@ -132,11 +131,11 @@ with Controller(config) as dac:
 
 ### Example 2: As a Standalone Service
 
-If it runs as an application or server:
+Run the DAQ system as a service with a web monitor.
 
 ```bash
-# Run the main application from the root directory
-./build/dacdaq --config /path/to/your/config.yml
+# Run the main application server from the root directory
+python -m dacdaq.server --config config/local.yml
 ```
 
 > **Note**
@@ -150,13 +149,14 @@ A high-level overview of the repository's layout.
 
 ```
 dacdaq/
-├── config/           # Example configuration files
-├── dacdaq/           # Main source code (or src/)
+├── config/           # Example configuration files (default.yml)
+├── dacdaq/           # Main source code package
 │   ├── __init__.py
-│   ├── core/         # Core logic, data pipeline
-│   ├── inputs/       # Hardware/sensor plugins
-│   ├── outputs/      # Data sink plugins (database, file, etc.)
-│   └── processing/   # Real-time processing modules
+│   ├── server.py     # FastAPI web server entrypoint
+│   ├── core/         # Core logic, data pipeline, Controller
+│   ├── inputs/       # Hardware/sensor plugins (ni_daq.py, simulator.py)
+│   ├── outputs/      # Data sink plugins (hdf5_sink.py, influx_sink.py)
+│   └── processing/   # Real-time processing modules (filters.py)
 ├── docs/             # Project documentation
 ├── scripts/          # Helper scripts (build, deploy, etc.)
 ├── tests/            # Unit and integration tests
@@ -205,7 +205,7 @@ Distributed under the **MIT License**. See `LICENSE` file for more information.
 
 ## ✉️ Contact
 
-**[Your Name / Alias]** - @GodlyDonuts
+@GodlyDonuts
 
 **Project Link:** [https://github.com/GodlyDonuts/dacdaq](https://github.com/GodlyDonuts/dacdaq)
 
