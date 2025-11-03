@@ -15,7 +15,7 @@ Built to replace legacy lab software, DacDAQ offers a modern, maintainable, and 
 
 <p>
 <a href="[https://github.com/GodlyDonuts/dacdaq/actions](https://github.com/GodlyDonuts/dacdaq/actions)"\>
-<img src="[https://img.shields.io/github/actions/workflow/status/GodlyDonuts/dacdaq/ci.yml?branch=main\&style=for-the-badge](https://img.shields.io/github/actions/workflow/status/GodlyDonuts/dacdaq/ci.yml?branch=main&style=for-the-badge)" alt="Build Status"\>
+<img src="[https://img.shields.io/github/actions/workflow/status/GodlyDonuts/dacdaq/ci.yml?branch=main\&style=for-the-badge](https://img.shields.io/github/actions/workflow/status/GodlyDonuts/dacdaq/ci.yml?branch=main&style=for-the-badge)" alt="Build Status">
 </a>
 <a href="[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)"/>
 <img src="[https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)" alt="License: MIT"\>
