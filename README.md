@@ -2,9 +2,9 @@
 
 <br>
 
-<h1\>
+<h1>
 ⚡️ DacDAQ ⚡️
-</h1\>
+</h1>
 
 <p\>
 <b\>A robust, high-performance, and scalable Python system for real-time data acquisition, processing, and visualization.\</b\>
