@@ -22,12 +22,12 @@ Built to replace legacy lab software, DacDAQ offers a modern, maintainable, and 
 </a>
 <a href="[https://github.com/GodlyDonuts/dacdaq/releases](https://github.com/GodlyDonuts/dacdaq/releases)"\>
 <img src="[https://img.shields.io/github/v/release/GodlyDonuts/dacdaq?style=for-the-badge](https://img.shields.io/github/v/release/GodlyDonuts/dacdaq?style=for-the-badge)" alt="Latest Release"\>
-</a\>
+</a>
 <a href="[https://github.com/GodlyDonuts/dacdaq/issues](https://github.com/GodlyDonuts/dacdaq/issues)"\>
 <img src="[https://img.shields.io/github/issues/GodlyDonuts/dacdaq?style=for-the-badge](https://img.shields.io/github/issues/GodlyDonuts/dacdaq?style=for-the-badge)" alt="Open Issues"\>
-</a\>
-</p\>
-</div\>
+</a>
+</p>
+</div>
 
 -----
 
